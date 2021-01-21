@@ -1,2 +1,3 @@
-# recommendation-app
-Created with CodeSandbox
+# recommendation-app  goodFood
+
+Do you love Food? You would find some good recommendations for all the food types. Made using ReactJS with love
