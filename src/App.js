@@ -3,27 +3,49 @@ import "./styles.css";
 
 var foodDictionary = {
   healthy: [
-    { name: "Vegetables", rating: "4/5" },
-    { name: "Grains", rating: "4/5" },
-    { name: "Fruits", rating: "4.5/5" }
+    {
+      name: "Vegetables",
+      desc: "Maintain your health by Vegetables",
+      rating: "4/5"
+    },
+    { name: "Grains", desc: "Maintain your strength by Grains", rating: "4/5" },
+    {
+      name: "Fruits",
+      desc: "Maintain your Vitamins by Fruits",
+      rating: "4.5/5"
+    }
   ],
   shelfStable: [
     {
       name: "Milk Products",
+      desc: "Maintain your Calcium by Milk Products",
       rating: "5/5"
     },
     {
       name: "Eggs",
+      desc: "Maintain your Protien by Eggs",
       rating: "2.5/5"
+    },
+    {
+      name: "Tofu",
+      desc: "Maintain your Vegan Diet by Tofu",
+      rating: "3.5/5"
     }
   ],
   fast: [
     {
       name: "Burger",
+      desc: "Treat your Taste Buds",
       rating: "3.5/5"
     },
     {
       name: "French Fries",
+      desc: "Treat your Taste Buds",
+      rating: "4/5"
+    },
+    {
+      name: "Pizza",
+      desc: "Treat your Taste Buds",
       rating: "4/5"
     }
   ]
@@ -76,6 +98,7 @@ export default function App() {
               }}
             >
               <div style={{ fontSize: "larger" }}> {foodType.name} </div>
+              <div style={{ fontSize: "small" }}> {foodType.desc} </div>
               <div style={{ fontSize: "smaller" }}> {foodType.rating} </div>
             </li>
           ))}
